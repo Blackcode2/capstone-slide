@@ -52,13 +52,13 @@
         --t-hero: clamp(2.5rem, 6vw, 4.8rem); /* hero-display 56px+ */
         --t-display-lg: clamp(2rem, 4.2vw, 3.5rem); /* tile headline 40px */
         --t-display-md: clamp(1.5rem, 3vw, 2.4rem); /* section head 34px */
-        --t-lead: clamp(1.15rem, 2vw, 1.75rem); /* tagline 28px */
-        --t-lead-airy: clamp(1.05rem, 1.65vw, 1.5rem); /* 24px / 300 */
-        --t-tagline: clamp(1rem, 1.45vw, 1.31rem); /* 21px / 600 */
-        --t-body-strong: clamp(0.95rem, 1.25vw, 1.15rem);
-        --t-body: clamp(0.95rem, 1.25vw, 1.15rem); /* 17px / 400 */
-        --t-caption: clamp(0.78rem, 0.95vw, 0.875rem); /* 14px */
-        --t-fine: clamp(0.7rem, 0.85vw, 0.78rem); /* 12px */
+        --t-lead: clamp(1.3rem, 2.25vw, 2rem); /* tagline / body lead */
+        --t-lead-airy: clamp(1.2rem, 1.85vw, 1.7rem);
+        --t-tagline: clamp(1.15rem, 1.65vw, 1.5rem);
+        --t-body-strong: clamp(1.1rem, 1.5vw, 1.4rem);
+        --t-body: clamp(1.1rem, 1.5vw, 1.4rem); /* body bumped ~20% */
+        --t-caption: clamp(0.95rem, 1.15vw, 1.1rem); /* caption bumped */
+        --t-fine: clamp(0.78rem, 0.95vw, 0.9rem); /* eyebrow labels */
 
         /* Spacing — 8px base */
         --s-xxs: 4px;
@@ -440,7 +440,7 @@
       }
       .big-list li {
         font-family: var(--font-text);
-        font-size: clamp(1rem, 1.55vw, 1.4rem);
+        font-size: clamp(1.2rem, 1.85vw, 1.7rem);
         font-weight: 400;
         line-height: 1.47;
         letter-spacing: -0.022em;
@@ -529,7 +529,7 @@
 
       .util-card p {
         font-family: var(--font-text);
-        font-size: clamp(0.85rem, 1.1vw, 1.05rem);
+        font-size: clamp(1rem, 1.3vw, 1.25rem);
         font-weight: 400;
         line-height: 1.5;
         color: var(--c-ink-80);
@@ -557,6 +557,7 @@
       }
       .split > * {
         min-height: 0;
+        min-width: 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -692,7 +693,7 @@
       }
       .flow-step p {
         font-family: var(--font-text);
-        font-size: clamp(0.85rem, 1.1vw, 1.05rem);
+        font-size: clamp(1rem, 1.3vw, 1.25rem);
         font-weight: 400;
         line-height: 1.5;
         color: var(--c-ink-80);
@@ -1038,7 +1039,7 @@
           <span class="keyword">로봇 학습</span>
         </div>
       </div>
-      <div class="page-marker"><span class="blue">01</span> / 16</div>
+      <div class="page-marker"><span class="blue">01</span> / 18</div>
     </section>
 
     <!-- ============================================================
@@ -1048,7 +1049,7 @@
       <div class="slide-content">
         <div class="slide-meta reveal">
           <span class="eyebrow">Team</span>
-          <span class="slide-index">02 / 16</span>
+          <span class="slide-index">02 / 18</span>
         </div>
 
         <div class="split weighted" style="margin-top: var(--s-xs)">
@@ -1257,7 +1258,7 @@
       <div class="slide-content">
         <div class="slide-meta reveal">
           <span class="eyebrow">Overview</span>
-          <span class="slide-index">03 / 16</span>
+          <span class="slide-index">03 / 18</span>
         </div>
 
         <h2 class="display-lg reveal">
@@ -1269,7 +1270,7 @@
           class="split weighted"
           style="
             margin-top: var(--s-lg);
-            grid-template-columns: 1.4fr 1fr;
+            grid-template-columns: 3.5fr 1fr;
           "
         >
           <div
@@ -1311,7 +1312,7 @@
               <div
                 style="
                   display: grid;
-                  grid-template-columns: 140px 1fr;
+                  grid-template-columns: 115px 1fr;
                   gap: var(--s-md);
                   align-items: baseline;
                 "
@@ -1330,7 +1331,7 @@
                 <span
                   style="
                     font-family: var(--font-display);
-                    font-size: clamp(1.4rem, 2.3vw, 2.05rem);
+                    font-size: clamp(1.2rem, 1.9vw, 1.75rem);
                     font-weight: 600;
                     letter-spacing: -0.022em;
                     line-height: 1.25;
@@ -1344,7 +1345,7 @@
               <div
                 style="
                   display: grid;
-                  grid-template-columns: 140px 1fr;
+                  grid-template-columns: 115px 1fr;
                   gap: var(--s-md);
                   align-items: baseline;
                 "
@@ -1363,7 +1364,7 @@
                 <span
                   style="
                     font-family: var(--font-display);
-                    font-size: clamp(1.4rem, 2.3vw, 2.05rem);
+                    font-size: clamp(1.2rem, 1.9vw, 1.75rem);
                     font-weight: 600;
                     letter-spacing: -0.022em;
                     line-height: 1.25;
@@ -1377,7 +1378,7 @@
               <div
                 style="
                   display: grid;
-                  grid-template-columns: 140px 1fr;
+                  grid-template-columns: 115px 1fr;
                   gap: var(--s-md);
                   align-items: baseline;
                 "
@@ -1396,7 +1397,7 @@
                 <span
                   style="
                     font-family: var(--font-display);
-                    font-size: clamp(1.4rem, 2.3vw, 2.05rem);
+                    font-size: clamp(1.2rem, 1.9vw, 1.75rem);
                     font-weight: 600;
                     letter-spacing: -0.022em;
                     line-height: 1.25;
@@ -1439,7 +1440,7 @@
       <div class="slide-content">
         <div class="slide-meta reveal">
           <span class="eyebrow">Why</span>
-          <span class="slide-index">04 / 16</span>
+          <span class="slide-index">04 / 18</span>
         </div>
 
         <h2 class="display-lg reveal">
@@ -1498,7 +1499,7 @@
       <div class="slide-content">
         <div class="slide-meta reveal">
           <span class="eyebrow">Industry Trend</span>
-          <span class="slide-index">05 / 16</span>
+          <span class="slide-index">05 / 18</span>
         </div>
 
         <h2 class="display-lg reveal">
@@ -1635,7 +1636,7 @@
       <div class="slide-content">
         <div class="slide-meta reveal">
           <span class="eyebrow">Our Approach</span>
-          <span class="slide-index">06 / 16</span>
+          <span class="slide-index">06 / 18</span>
         </div>
 
         <h2 class="display-lg reveal">
@@ -1766,7 +1767,7 @@
             <p
               style="
                 font-family: var(--font-text);
-                font-size: clamp(0.85rem, 1.1vw, 1.05rem);
+                font-size: clamp(1rem, 1.3vw, 1.25rem);
                 font-weight: 400;
                 line-height: 1.5;
                 color: var(--c-ink-80);
@@ -1819,7 +1820,7 @@
             <p
               style="
                 font-family: var(--font-text);
-                font-size: clamp(0.85rem, 1.1vw, 1.05rem);
+                font-size: clamp(1rem, 1.3vw, 1.25rem);
                 font-weight: 400;
                 line-height: 1.5;
                 color: var(--c-ink-80);
@@ -1875,7 +1876,7 @@
       <div class="slide-content">
         <div class="slide-meta reveal">
           <span class="eyebrow">System · Hardware</span>
-          <span class="slide-index">07 / 16</span>
+          <span class="slide-index">07 / 18</span>
         </div>
 
         <h2 class="display-lg reveal">시스템 구성 — 하드웨어.</h2>
@@ -1936,7 +1937,7 @@
       <div class="slide-content">
         <div class="slide-meta reveal">
           <span class="eyebrow">System · Software · Role</span>
-          <span class="slide-index">08 / 16</span>
+          <span class="slide-index">08 / 18</span>
         </div>
 
         <h2 class="display-lg reveal">
@@ -2193,7 +2194,7 @@
       <div class="slide-content">
         <div class="slide-meta reveal">
           <span class="eyebrow">How · Process</span>
-          <span class="slide-index">09 / 16</span>
+          <span class="slide-index">09 / 18</span>
         </div>
 
         <h2 class="display-lg reveal">
@@ -2267,7 +2268,7 @@
       <div class="slide-content">
         <div class="slide-meta reveal">
           <span class="eyebrow">Demo · 1 / 5 · Driver Code</span>
-          <span class="slide-index">10 / 16</span>
+          <span class="slide-index">10 / 18</span>
         </div>
 
         <h2 class="display-lg reveal">
@@ -2329,7 +2330,7 @@
       <div class="slide-content">
         <div class="slide-meta reveal">
           <span class="eyebrow">Demo · 2 / 5 · Data Collection</span>
-          <span class="slide-index">11 / 16</span>
+          <span class="slide-index">11 / 18</span>
         </div>
 
         <h2 class="display-lg reveal">
@@ -2407,7 +2408,7 @@
       <div class="slide-content">
         <div class="slide-meta reveal">
           <span class="eyebrow">Demo · 3 / 5 · LeRobot Training</span>
-          <span class="slide-index">12 / 16</span>
+          <span class="slide-index">12 / 18</span>
         </div>
 
         <h2 class="display-lg reveal">
@@ -2468,7 +2469,7 @@
       <div class="slide-content">
         <div class="slide-meta reveal">
           <span class="eyebrow">Demo · 4 / 5 · Isaac Sim Training</span>
-          <span class="slide-index">13 / 16</span>
+          <span class="slide-index">13 / 18</span>
         </div>
 
         <h2 class="display-lg reveal">
@@ -2529,7 +2530,7 @@
       <div class="slide-content">
         <div class="slide-meta reveal">
           <span class="eyebrow">Demo · 5 / 5 · Real Robot Application</span>
-          <span class="slide-index">14 / 16</span>
+          <span class="slide-index">14 / 18</span>
         </div>
 
         <h2 class="display-lg reveal">
@@ -2584,13 +2585,266 @@
     </section>
 
     <!-- ============================================================
-     SLIDE 15 — IMPACT (light)
+     SLIDE 15 — RESULTS · Success / Failure Analysis (light)
+============================================================ -->
+    <section class="slide tile-light" data-title="결과 — 성공/실패 분석">
+      <div class="slide-content">
+        <div class="slide-meta reveal">
+          <span class="eyebrow">Results · Success / Failure</span>
+          <span class="slide-index">15 / 18</span>
+        </div>
+
+        <h2 class="display-lg reveal">
+          43회 중 <span class="blue">8회 성공</span>. 부족하지만 진짜 데이터.
+        </h2>
+
+        <!-- Stats row -->
+        <div
+          class="reveal"
+          style="
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: var(--s-md);
+            margin-top: var(--s-lg);
+            margin-bottom: var(--s-md);
+          "
+        >
+          <div style="border-left: 3px solid var(--c-primary); padding-left: var(--s-md);">
+            <div style="font-family: var(--font-display); font-size: clamp(1.6rem, 3vw, 2.6rem); font-weight: 700; color: var(--c-ink); letter-spacing: -0.022em;">43</div>
+            <div style="font-family: var(--font-text); font-size: var(--t-caption); color: var(--c-ink-80); margin-top: 4px;">총 시도</div>
+          </div>
+          <div style="border-left: 3px solid var(--c-primary); padding-left: var(--s-md);">
+            <div style="font-family: var(--font-display); font-size: clamp(1.6rem, 3vw, 2.6rem); font-weight: 700; color: var(--c-primary); letter-spacing: -0.022em;">8</div>
+            <div style="font-family: var(--font-text); font-size: var(--t-caption); color: var(--c-ink-80); margin-top: 4px;">성공 (불안정 7 · 완벽 1)</div>
+          </div>
+          <div style="border-left: 3px solid #b91c1c; padding-left: var(--s-md);">
+            <div style="font-family: var(--font-display); font-size: clamp(1.6rem, 3vw, 2.6rem); font-weight: 700; color: #b91c1c; letter-spacing: -0.022em;">35</div>
+            <div style="font-family: var(--font-text); font-size: var(--t-caption); color: var(--c-ink-80); margin-top: 4px;">실패</div>
+          </div>
+          <div style="border-left: 3px solid var(--c-ink); padding-left: var(--s-md);">
+            <div style="font-family: var(--font-display); font-size: clamp(1.6rem, 3vw, 2.6rem); font-weight: 700; color: var(--c-ink); letter-spacing: -0.022em;">18.6%</div>
+            <div style="font-family: var(--font-text); font-size: var(--t-caption); color: var(--c-ink-80); margin-top: 4px;">성공률</div>
+          </div>
+        </div>
+
+        <!-- Failure / Success breakdown -->
+        <div
+          class="split reveal"
+          style="flex: 1; gap: var(--s-xl); margin-top: var(--s-xs); align-items: stretch;"
+        >
+          <!-- Failures -->
+          <div style="display: flex; flex-direction: column;">
+            <div class="eyebrow" style="color: #b91c1c; margin-bottom: var(--s-sm);">실패 패턴 · 35회</div>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: var(--s-xs); font-family: var(--font-text); font-size: clamp(1.05rem, 1.4vw, 1.3rem); line-height: 1.4; color: var(--c-ink);">
+              <li style="display: flex; justify-content: space-between; gap: var(--s-md);">
+                <span>잘못된 위치에서 grasp 시도</span>
+                <span style="font-weight: 600; color: #b91c1c; font-variant-numeric: tabular-nums;">15회</span>
+              </li>
+              <li style="display: flex; justify-content: space-between; gap: var(--s-md);">
+                <span>잘못된 경로로 이동</span>
+                <span style="font-weight: 600; color: #b91c1c; font-variant-numeric: tabular-nums;">8회</span>
+              </li>
+              <li style="display: flex; justify-content: space-between; gap: var(--s-md);">
+                <span>접근 후 미세한 오차로 실패</span>
+                <span style="font-weight: 600; color: #b91c1c; font-variant-numeric: tabular-nums;">6회</span>
+              </li>
+              <li style="display: flex; justify-content: space-between; gap: var(--s-md);">
+                <span>접근했으나 grasp 시도 안 함</span>
+                <span style="font-weight: 600; color: #b91c1c; font-variant-numeric: tabular-nums;">4회</span>
+              </li>
+              <li style="display: flex; justify-content: space-between; gap: var(--s-md);">
+                <span>시작 직후 갑자기 grasp 시도</span>
+                <span style="font-weight: 600; color: #b91c1c; font-variant-numeric: tabular-nums;">1회</span>
+              </li>
+              <li style="display: flex; justify-content: space-between; gap: var(--s-md);">
+                <span>안전상 실험자 정지</span>
+                <span style="font-weight: 600; color: #b91c1c; font-variant-numeric: tabular-nums;">1회</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Success + Insights -->
+          <div style="display: flex; flex-direction: column; gap: var(--s-md);">
+            <div>
+              <div class="eyebrow" style="color: var(--c-primary); margin-bottom: var(--s-sm);">성공 패턴 · 8회</div>
+              <ul style="list-style: none; display: flex; flex-direction: column; gap: var(--s-xs); font-family: var(--font-text); font-size: clamp(1.05rem, 1.4vw, 1.3rem); line-height: 1.4; color: var(--c-ink);">
+                <li style="display: flex; justify-content: space-between; gap: var(--s-md);">
+                  <span>불안정한 성공 (재현성 낮음)</span>
+                  <span style="font-weight: 600; color: var(--c-primary); font-variant-numeric: tabular-nums;">7회</span>
+                </li>
+                <li style="display: flex; justify-content: space-between; gap: var(--s-md);">
+                  <span>완벽한 성공</span>
+                  <span style="font-weight: 600; color: var(--c-primary); font-variant-numeric: tabular-nums;">1회</span>
+                </li>
+              </ul>
+            </div>
+
+            <div
+              style="
+                margin-top: var(--s-sm);
+                padding: var(--s-md) var(--s-lg);
+                background: var(--c-pearl);
+                border-left: 4px solid var(--c-primary);
+                border-radius: var(--r-md);
+              "
+            >
+              <div class="eyebrow" style="margin-bottom: var(--s-xs);">Insight · 핵심 교훈</div>
+              <p style="font-family: var(--font-display); font-size: clamp(1rem, 1.4vw, 1.3rem); font-weight: 600; letter-spacing: -0.022em; line-height: 1.35; color: var(--c-ink);">
+                실패의 <span class="blue">66%</span>가 <strong>위치·경로 오류</strong> —
+                학습 데이터 다양성 부족.<br />
+                <span class="blue">"한두 번 더 시도하면 잡힌다"</span> — 정책이 거의 다 왔다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     SLIDE 16 — NEXT STEPS · Improvement Plan (dark)
+============================================================ -->
+    <section class="slide tile-dark" data-title="추후 계획 — 개선 방향">
+      <div class="slide-content">
+        <div class="slide-meta reveal">
+          <span class="eyebrow">Next Steps · Improvement Plan</span>
+          <span class="slide-index">16 / 18</span>
+        </div>
+
+        <h2 class="display-lg reveal">
+          <span class="blue">데이터 · 예외 · 자원</span>으로<br />
+          성공률을 끌어올린다.
+        </h2>
+
+        <p
+          class="lead reveal"
+          style="
+            color: var(--c-body-muted);
+            margin-top: var(--s-xs);
+            margin-bottom: var(--s-md);
+            max-width: 70ch;
+          "
+        >
+          18.6% → 더 높은 성공률을 위해 네 가지 축으로 개선합니다.
+        </p>
+
+        <div
+          class="util-grid cols-4 stagger"
+          style="flex: 1; margin-top: var(--s-xs);"
+        >
+          <!-- Card 1: Data Scale -->
+          <div class="util-card">
+            <span class="eyebrow">Plan · 01</span>
+            <h3>데이터 2~4배 확장</h3>
+            <p>
+              실패의 66%가 위치·경로 오류 — <strong style="color: var(--c-on-dark);">다양한 시연 시나리오</strong>로 episode 수를 늘려 정책의 일반화 범위 확장.
+            </p>
+            <span
+              style="
+                display: inline-flex;
+                align-self: flex-start;
+                margin-top: auto;
+                padding: 4px 12px;
+                background: var(--c-primary);
+                border-radius: var(--r-pill);
+                font-family: var(--font-text);
+                font-size: var(--t-fine);
+                font-weight: 600;
+                color: #fff;
+                letter-spacing: -0.01em;
+              "
+              >LeRobot · BC 재학습</span
+            >
+          </div>
+
+          <!-- Card 2: Edge Case Coverage -->
+          <div class="util-card">
+            <span class="eyebrow">Plan · 02</span>
+            <h3>예외 상황 커버 학습</h3>
+            <p>
+              "잘못된 위치", "미세 오차" 같은 실패 패턴을
+              <strong style="color: var(--c-on-dark);">학습 데이터·보상 함수</strong>에 명시적으로 포함 — Domain Randomization 적용.
+            </p>
+            <span
+              style="
+                display: inline-flex;
+                align-self: flex-start;
+                margin-top: auto;
+                padding: 4px 12px;
+                background: var(--c-primary);
+                border-radius: var(--r-pill);
+                font-family: var(--font-text);
+                font-size: var(--t-fine);
+                font-weight: 600;
+                color: #fff;
+                letter-spacing: -0.01em;
+              "
+              >Isaac Sim · RL 보상 다양화</span
+            >
+          </div>
+
+          <!-- Card 3: VR Teleoperation -->
+          <div class="util-card">
+            <span class="eyebrow">Plan · 03</span>
+            <h3>VR 텔레오퍼레이션</h3>
+            <p>
+              직접교시에 더해
+              <strong style="color: var(--c-on-dark);">VR로 추가 시연 데이터</strong>를 수집 — 다양한 시나리오와 수집 규모를 함께 확장.
+            </p>
+            <span
+              style="
+                display: inline-flex;
+                align-self: flex-start;
+                margin-top: auto;
+                padding: 4px 12px;
+                background: var(--c-primary);
+                border-radius: var(--r-pill);
+                font-family: var(--font-text);
+                font-size: var(--t-fine);
+                font-weight: 600;
+                color: #fff;
+                letter-spacing: -0.01em;
+              "
+              >개발 진행 중</span
+            >
+          </div>
+
+          <!-- Card 4: New GPU machine -->
+          <div class="util-card" style="background: var(--c-primary); border-color: var(--c-primary);">
+            <span class="eyebrow" style="color: rgba(255, 255, 255, 0.78) !important;">Plan · 04</span>
+            <h3 style="color: #fff;">신규 GPU 머신 활용</h3>
+            <p style="color: rgba(255, 255, 255, 0.9) !important;">
+              <strong style="color: #fff;">병렬 강화학습</strong> 환경 구동 — Isaac Sim 다중 시뮬로 학습 시간 단축, 더 큰 모델 시도 가능.
+            </p>
+            <span
+              style="
+                display: inline-flex;
+                align-self: flex-start;
+                margin-top: auto;
+                padding: 4px 12px;
+                background: rgba(255, 255, 255, 0.18);
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                border-radius: var(--r-pill);
+                font-family: var(--font-text);
+                font-size: var(--t-fine);
+                font-weight: 600;
+                color: #fff;
+                letter-spacing: -0.01em;
+              "
+              >학습 가속 · 자원 확보</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     SLIDE 17 — IMPACT (light)
 ============================================================ -->
     <section class="slide tile-light" data-title="기대효과 및 향후 전망">
       <div class="slide-content">
         <div class="slide-meta reveal">
           <span class="eyebrow">Impact</span>
-          <span class="slide-index">15 / 16</span>
+          <span class="slide-index">17 / 18</span>
         </div>
 
         <h2 class="display-lg reveal">기대효과 및 향후 전망.</h2>
@@ -2643,13 +2897,13 @@
     </section>
 
     <!-- ============================================================
-     SLIDE 16 — CLOSING (black)
+     SLIDE 18 — CLOSING (black)
 ============================================================ -->
     <section class="slide tile-black" data-title="마무리">
       <div class="slide-content" style="justify-content: center">
         <div class="slide-meta reveal">
           <span class="eyebrow">Closing</span>
-          <span class="slide-index">16 / 16</span>
+          <span class="slide-index">18 / 18</span>
         </div>
 
         <p
